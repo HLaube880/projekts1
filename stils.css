@@ -1,0 +1,36 @@
+body {
+  background-color: #DFFF00;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  color: #6495ED;
+}
+
+h1 {
+  color: blue;
+  font-size: 54px;
+}
+
+table {
+  background-color: #CCCCFF;
+  color: Green;
+  border-color: green;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid;
+  
+}
+
+th {
+  color: blue;
+  background-color: #FF7F50;
+}
+
+td {
+  color: #8A2BE2;
+  background-color: #7FFF00;
+}
+
