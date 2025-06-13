@@ -1,6 +1,10 @@
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   background-color: #DFFF00;
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 p {
@@ -21,16 +25,184 @@ table {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid;
+}
+
+/* th {
+  color: blue;
+  background-color: #FF7F50;
+} */
+
+/* td {
+  color: #8A2BE2;
+  background-color: #7FFF00;
+} */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333333;
+  margin-top: 0px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 200px)
+}
+
+.topnav a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  border: 1px;
+  border-style: dotted;
+  border-color: red;
+}
+
+main {
+  margin-left: 200px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  padding: 25px;
+}
+
+.topnav a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  background-color: #333333;
+  top: 0;
+  left: 0;
+}
+
+.sidebar a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+#tabula {
+  background-color: yellow;
+  border-radius: 8px;
+}
+
+#tabula ul {
+  list-style-type: square;
+  padding-left: 100px;
+}
+
+#tabula li.cits {
+  color: red;
+  font-size: 24px;
+}
+
+#tabula table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tabula tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#tabula td {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+#saturs {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#saturs p {
+  color: #06f5f5;
+  font-size: 20px;
+  display: block;
+}
+
+#saturs img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 13px;
+}
+
+#saturs a {
+  display: inline-block;
+  margin: 10px 0;
+  color: #0e43e1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#saturs a:hover {
+  text-decoration: underline;
+}
+
+#canva {
+  background-color: #c9d9f7;
+  border-radius: 8px;
   
 }
 
-th {
-  color: blue;
-  background-color: #FF7F50;
+footer {
+  background-color: #333333;
+  margin-left: 200px;
+  padding-left: 25px;
+  color: white;
+  text-align: center;
+  width: calc(100% - 200px)
 }
 
-td {
-  color: #8A2BE2;
-  background-color: #7FFF00;
+.container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between; /* izlīdzina vietu starp kolonnām */
+    }
+
+myDiv {
+  flex: 1px;
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+  width: 20%;
 }
 
+ .column {
+      flex: 1; /* katra kolonna aizņem vienādu platumu */
+      padding: 20px;
+      margin: 10px;
+      background-color: #e0e0e0;
+      border: 1px solid #cccccc;
+    }
+
+zimejums {
+  border: 1px solid #000000;
+}

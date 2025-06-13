@@ -1,67 +1,155 @@
 <!DOCTYPE html>
 <html>
-  
-<head>
-  <meta charset="UTF-8">
-  <title>Helgas lapa</title>
-  <link rel="stylesheet" href="stils.css">
-  <script src="skripts.js"></script>
-</head>
-  
-<body>
-  <a href="par_mums.html">Par mums</a>
-  <h1>Sveika pasaule!</h1>
-  <p>Šis ir mans pirmais HTML dokuments</p>
-  <img src="https://cdn.glitch.global/93272b2a-4c2e-4741-b383-ff419f70edf3/buv2.jpg?v=1749471200317">
-  <marquee>Mans teksts</marquee>
-  <a href="https://www.w3schools.com/html/default.asp">Ej uz HTML Tutorial</a><br><br>
-  
-  <table>
-      <tr>
-        <th>Pirmais</th>
-        <th>Otrais</th>
-        <th>Trešais</th>
-    </tr>
-    <tr>
-      <td>2.rinda 1.kolonna</td>
-      <td>2.rinda 2.kolonna</td>
-      <td>2.rinda 3.kolonna</td>
-    </tr>
-        <tr>
-      <td colspan="2">2.rinda 1.kolonna apvienota ar 2.rinda 2.kolonna</td>
-      <td rowspan="4">3.rinda 3.kolonna apvienota ar 4.rinda 3.kolonna</td>
-    </tr>
-        <tr>
-      <td>4.rinda 1.kolonna</td>
-      <td >4.rinda 2.kolonna</td>
-    </tr>
-    
-  </table>
-  
-    <ol reversed>
-      <li>Pirmais elements</li>
-      <li>Otrais elements</li>
-      <li>Trešais elements</li>
-    </ol>
-  
-      <ol type="A" start="3">
-      <li>Pirmais elements</li>
-      <li>Otrais elements</li>
-      <li>Trešais elements</li>
-    </ol>
-  
-      <ol type="I">
-      <li>Pirmais elements</li>
-      <li>Otrais elements</li>
-      <li>Trešais elements</li>
-    </ol>
-    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Helgas sākumlapa</title>
+    <script src="skripts.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stils.css" />
+  </head>
+
+  <body>
+    <heder>
+      <nav class="topnav">
+        <a href="/">Sākums</a>
+        <a href="par_mums.html">Par mums</a>
+        <a href="kontakti.html">Kontakti</a>
+        <a href="aptauja.html">Aptauja</a>
+        <a href="pamati_sintakse.html">Pamati Sintakse</a>
+      </nav>
+    </heder>
+
+    <aside class="sidebar">
+      <a href="#saturs">Saturs</a>
+      <a href="#tabula">Tabulas</a>
+      <a href="#canva">Canva</a>
+    </aside>
+
+    <main>
+      
+      <section>
+      <div class="container">
+        <div class="column">
+          <h2>Kolonna 1</h2>
+          <p>Šeit ir saturs pirmajā kolonnā.</p>
+        </div>
+        <div class="column">
+          <h2>Kolonna 2</h2>
+          <p>Šeit ir saturs otrajā kolonnā.</p>
+        </div>
+        <div class="column">
+          <h2>Kolonna 3</h2>
+          <p>Šeit ir saturs trešajā kolonnā.</p>
+        </div>
+      </div>
+        </section>
+
+      <section id="saturs">
+        <h1>Sveika pasaule!</h1>
+        <p>Šis ir mans pirmais HTML dokuments</p>
+        <img
+          src="https://cdn.glitch.global/93272b2a-4c2e-4741-b383-ff419f70edf3/buv2.jpg?v=1749471200317"
+        />
+        <marquee>Mans teksts</marquee>
+        <a href="https://www.w3schools.com/html/default.asp"
+          >Ej uz HTML Tutorial</a
+        ><br /><br />
+      </section>
+
+      <section id="tabula">
+        <h2>Tabulas</h2>
+        <table class="table">
+          <tr>
+            <th>Pirmais</th>
+            <th>Otrais</th>
+            <th>Trešais</th>
+          </tr>
+          <tr>
+            <td>2.rinda 1.kolonna</td>
+            <td>2.rinda 2.kolonna</td>
+            <td>2.rinda 3.kolonna</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              2.rinda 1.kolonna apvienota ar 2.rinda 2.kolonna
+            </td>
+            <td rowspan="4">
+              3.rinda 3.kolonna apvienota ar 4.rinda 3.kolonna
+            </td>
+          </tr>
+          <tr>
+            <td>4.rinda 1.kolonna</td>
+            <td>4.rinda 2.kolonna</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <th>Pirmais</th>
+            <th>Otrais</th>
+            <th>Trešais</th>
+          </tr>
+          <tr>
+            <td>2.rinda 1.kolonna</td>
+            <td>2.rinda 2.kolonna</td>
+            <td>2.rinda 3.kolonna</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              2.rinda 1.kolonna apvienota ar 2.rinda 2.kolonna
+            </td>
+            <td rowspan="4">
+              3.rinda 3.kolonna apvienota ar 4.rinda 3.kolonna
+            </td>
+          </tr>
+          <tr>
+            <td>4.rinda 1.kolonna</td>
+            <td>4.rinda 2.kolonna</td>
+          </tr>
+        </table>
+
+        <ol reversed>
+          <li>Pirmais elements</li>
+          <li>Otrais elements</li>
+          <li>Trešais elements</li>
+        </ol>
+
+        <ol type="A" start="3">
+          <li>Pirmais elements</li>
+          <li>Otrais elements</li>
+          <li>Trešais elements</li>
+        </ol>
+
+        <ol type="I">
+          <li>Pirmais elements</li>
+          <li>Otrais elements</li>
+          <li>Trešais elements</li>
+        </ol>
+
         <ul type="circle">
-      <li>Pirmais elements</li>
-      <li>Otrais elements</li>
-      <li>Trešais elements</li>
-    </ul>
-  
+          <li class="cits">Pirmais elements</li>
+          <li class="cits">Otrais elements</li>
+          <li class="cits">Trešais elements</li>
+        </ul>
+      </section>
+
+      <section id="canva">
+        <h2>Kanva</h2>
+        <canvas id="zimejums" width="500" height="400"></canvas>
+        <button onclick="taisnsturis()" class="btn btn-primary">
+          Taisnstūris
+        </button>
+        <button onclick="aplis()" class="btn btn-success">Aplis</button>
+        <button onclick="teksts()" class="btn btn-danger">Teksts</button>
+        <button onclick="linija()" class="btn btn-warning">Līnija</button>
+      </section>
+    </main>
+    <footer>&copy Helga 2025</footer>
   </body>
-  
 </html>
