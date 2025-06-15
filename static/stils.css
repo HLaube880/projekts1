@@ -59,6 +59,15 @@ table {
   padding: 14px 0;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.3s; /* Gluda pāreja */
+}
+
+.topnav a.active {
+  color: green; /* Aktīvās saites krāsa */
+  font-weight: bold; /* Var pievienot arī biezāku tekstu */
+  border-bottom: 2px solid red; /* Papildus vizuāls efekts */
+  background-color: white; /* Aktīvā fona krāsa (zila) */
+  border-radius: 5px; /* Neliels noapaļojums */
 }
 
 .sidebar a {
@@ -79,6 +88,8 @@ main {
   margin-bottom: 25px;
   padding-bottom: 25px;
   padding: 25px;
+  height: 100%;
+  
 }
 
 .topnav a:hover {
@@ -166,6 +177,14 @@ main {
   text-decoration: underline;
 }
 
+#saturs2 {
+background-color: green;  
+}
+
+#saturs3 {
+background-color: #6b98ee;  
+}
+
 #canva {
   background-color: #c9d9f7;
   border-radius: 8px;
@@ -182,6 +201,12 @@ footer {
 }
 
 .container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between; /* izlīdzina vietu starp kolonnām */
+    }
+
+.container1 {
       display: flex;
       gap: 20px;
       justify-content: space-between; /* izlīdzina vietu starp kolonnām */
@@ -205,4 +230,9 @@ myDiv {
 
 zimejums {
   border: 1px solid #000000;
+}
+
+#lapas {
+  width: 100%;
+  height: 100%
 }
