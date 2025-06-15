@@ -55,6 +55,48 @@ def datu_tipi():
         mans_kopa=mans_kopa
     )
 
+@app.route('/operatori')
+def operatori():
+    a = 12
+    b = 6
+    summa = a + b
+    starpiba = a - b
+    reizinajums = a * b
+    dalijums = a / b
+    atlikums = a % b
+    vienads = (a == b)
+    
+    print(summa)
+    print(starpiba)
+    print(reizinajums)
+    print(dalijums)
+    print(atlikums)
+    print(vienads)
+    
+    return render_template(
+        "operatori.html",
+        summa=summa,
+        starpiba=starpiba,
+        reizinajums=reizinajums,
+        dalijums=dalijums,
+        atlikums=atlikums,
+        vienads=vienads
+    )
+
+@app.route('/kontroles_strukturas')
+def kontroles_strukturas():
+    x = 47
+    if 40 <= x <= 50:
+        rezultats = "Ir tādi darbinieki"
+    else:
+        rezultats = "Neatbilst"
+    
+    print(rezultats)
+    
+    for cikls_rezultats = 
+    
+    return render_template("kontroles_strukturas.html", rezultats=rezultats)
+
 
 
 if __name__== '__main__':
